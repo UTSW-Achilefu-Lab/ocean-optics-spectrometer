@@ -12,7 +12,7 @@ python3 --version
 
 # create virtual environment named ".venv"
 python3 -m venv .venv
-./venv/bin/Activate.ps1
+./.venv/bin/Activate.ps1
 
 # install dependencies seabreeze and matplotlib
 pip install seabreeze matplotlib
