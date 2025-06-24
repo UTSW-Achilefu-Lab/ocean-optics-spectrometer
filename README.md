@@ -5,7 +5,7 @@ Simple data viewer for ocean optics spectrometers
 
 ## Usage
 
-**Windows (powershell)**
+**Windows (powershell)** (untested)
 ```
 # confirm you have python
 python3 --version 

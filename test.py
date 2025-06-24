@@ -42,6 +42,7 @@ class SpectralAnimation:
     def update(self, frame):
         # Get the current intensities
         intensities = self.spec.intensities()
+        # TODO: optionally write this data to file here? (probably should be done with button press)
 
         self.intensity_data.append(intensities)
         
