@@ -18,8 +18,8 @@ class SpectralAnimation:
         self.fig, self.ax = plt.subplots()
         self.line, = self.ax.plot([], [], lw=2)
         self.ax.set_xlim(np.min(self.wavelengths), np.max(self.wavelengths))  # Set x-axis limits
-        self.ax.set_ylim(1000, 10000)  # Set y-axis limits (adjust as needed)
-        #self.ax.set_yscale("log")
+        self.ax.set_ylim(1000, 100000)  # Set y-axis limits (adjust as needed)
+        self.ax.set_yscale("log")
         self.ax.set_xlabel('Wavelength (nm)')
         self.ax.set_ylabel('Intensity')
         self.ax.set_title('Spectral Intensity')
