@@ -1,6 +1,21 @@
-import threading
+"""
+simple scipt to live visualize spectrometer data
+
+Ian Zurutuza -- Wed 31 Dec 2025 01:56:47 PM CST
+"""
+# https://python-seabreeze.readthedocs.io/en/latest/quickstart.html
+BACKEND = None # defaults to cseabreeze
+
+import seabreeze
+
+import sys
+# on windows default to python implementation.
+if (sys.platform == "win32" or BACKEND == "pyseabreeze"):
+    seabreeze.use('pyseabreeze')
 
 from seabreeze.spectrometers import Spectrometer
+
+import threading
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -74,10 +89,6 @@ class SpectralAnimation:
             except ValueError:
                 print("Invalid input. Please enter an integer.")
 
-# Example usage:
-# spec = YourSpectralDataClass()  # Replace with your actual spectral data class
-# animation = SpectralAnimation(spec)
-# animation.show()
 
 if __name__ == "__main__":
 
