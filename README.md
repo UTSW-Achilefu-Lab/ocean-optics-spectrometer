@@ -15,7 +15,7 @@ python3 -m venv .venv
 ./.venv/bin/Activate.ps1
 
 # install dependencies seabreeze and matplotlib
-pip install seabreeze matplotlib
+pip install seabreeze matplotlib pyusb
 
 # run program
 python test.py
